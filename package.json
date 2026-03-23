@@ -4,7 +4,8 @@
   "description": "Implementação do tabnews.com.br para o curso.dev",
   "main": "index.js",
   "scripts": {
-    "dev": "next dev"
+    "dev": "next dev",
+    "build": "next build"
   },
   "author": "",
   "license": "MIT",
