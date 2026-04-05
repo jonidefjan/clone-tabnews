@@ -1,5 +1,17 @@
+import Head from "next/head";
+
 function Home() {
-  return <h1>Obrigado por acreditar em mim!</h1>;
+  return (
+    <>
+      <Head>
+        <meta
+          name="google-site-verification"
+          content="E5p9xmCE70SuymR_rw1qLOptxSMUmPfM5RekYtGL8_I"
+        />
+        <h1>Obrigado por acreditar em mim!</h1>
+      </Head>
+    </>
+  );
 }
 
 export default Home;
