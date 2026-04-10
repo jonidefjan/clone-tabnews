@@ -1,3 +1,4 @@
+"use client";
 import Head from "next/head";
 
 function Home() {
@@ -9,9 +10,7 @@ function Home() {
           content="E5p9xmCE70SuymR_rw1qLOptxSMUmPfM5RekYtGL8_I"
         />
       </Head>
-      <body>
-        <h1>Obrigado por acreditar em mim!</h1>
-      </body>
+      <h1>Obrigado por acreditar em mim!</h1>
     </>
   );
 }
