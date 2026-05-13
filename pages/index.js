@@ -11,6 +11,7 @@ function Home() {
         />
       </Head>
       <h1>Obrigado por acreditar em mim!</h1>
+      <p>mais conteúdo em breve...</p>
     </>
   );
 }
