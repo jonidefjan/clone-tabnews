@@ -1,13 +1,18 @@
+import ochestrator from "tests/ochestrator.js";
+
+beforeAll(async () => {
+  await ochestrator.waitForAllServices();
+});
+
 test("GET /api/v1/status should return 200", async () => {
   const response = await fetch("http://localhost:3000/api/v1/status");
   expect(response.status).toBe(200);
 
   const responseBody = await response.json();
-  const parcedUpdatedAt = new Date(responseBody.updated_at).toISOString();
-  expect(responseBody.updated_at).toEqual(parcedUpdatedAt);
+  const parsedUpdatedAt = new Date(responseBody.updated_at).toISOString();
+  expect(responseBody.updated_at).toEqual(parsedUpdatedAt);
 
-  console.log(responseBody.dependecies);
-  // expect(responseBody.dependecies.version).toBe("16.0");
-  // expect(responseBody.dependecies.max_connections).toBe(100);
-  // expect(responseBody.dependecies.current_connections).toEqual(1);
+  expect(responseBody.dependencies.version).toBe("16.0");
+  expect(responseBody.dependencies.max_connections).toBe(100);
+  expect(responseBody.dependencies.current_connections).toEqual(1);
 });

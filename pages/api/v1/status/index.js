@@ -18,7 +18,7 @@ async function status(request, response) {
 
   response.status(200).json({
     updated_at: updatedAt,
-    dependecies: {
+    dependencies: {
       version: version,
       max_connections: maxConnectionsValue,
       current_connections: currentConnectionsValue,
